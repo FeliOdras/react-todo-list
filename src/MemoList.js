@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import './MemoList.css'
-import { timingSafeEqual } from 'crypto';
+import './MemoList.css';
+import ItemsList from './ItemsList';
 
 export class MemoList extends Component {
     constructor(props) {
@@ -36,6 +36,7 @@ export class MemoList extends Component {
         return (
             <div className="memo-list" >
                 <h4>My plan for today</h4>
+                <ItemsList items={this.state.items} />
                 <form onSubmit={this.handleSubmit}>
                     <input type="text" id="ListItem" onChange={this.handleChange} value={this.state.text}></input>
                     <button>Add #{this.state.items.length + 1}</button>
