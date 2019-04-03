@@ -1,7 +1,7 @@
 import React from 'react'
 import './MemoList.css'
 
-export default function Memolist() {
+export default function MemoList() {
     return (
         <div className="memo-list">
             <h4>My plan for today</h4>
