@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Logo from './Logo';
-import Header from './Header';
-import MemoList from './MemoList';
-import './App.css';
+import Logo from './components/Logo';
+import Header from './components/Header';
+import MemoList from './components/MemoList';
+import './styles/App.css';
 
 
 class App extends Component {
