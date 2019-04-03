@@ -4,7 +4,13 @@ export default class ItemsList extends Component {
     render() {
         return (
             <div>
-                There will be a List of items
+                <ul>
+                    {this.props.items.map(item => {
+                        return (
+                            <li key={item.id}>{item.text}</li>
+                        )
+                    })}
+                </ul>
             </div>
         )
     }
