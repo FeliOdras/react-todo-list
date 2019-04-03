@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Logo from './Logo';
 import Header from './Header';
 import MemoList from './MemoList';
+import ItemsList from './ItemsList';
 import './App.css';
 
 
@@ -12,6 +13,7 @@ class App extends Component {
         <header className="App-header">
           <Logo />
           <Header />
+          <ItemsList />
           <MemoList />
         </header>
       </div>
