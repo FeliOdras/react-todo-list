@@ -5,9 +5,12 @@ import ItemsList from './ItemsList';
 export class MemoList extends Component {
     constructor(props) {
         super(props)
+        this.localStorage = JSON.parse(localStorage.getItem('items'))
+        this.items = this.localStorage !== null ? this.localStorage : []
+
         this.state = {
             text: '',
-            items: []
+            items: this.items
         }
     }
 
@@ -33,10 +36,7 @@ export class MemoList extends Component {
                 text: ''
             })
         )
-
-        localStorage.setItems = ('items', newItems)
-
-
+        localStorage.items = ('items', JSON.stringify(newItems))
     }
 
     render() {
