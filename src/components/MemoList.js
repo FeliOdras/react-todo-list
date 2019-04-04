@@ -24,12 +24,19 @@ export class MemoList extends Component {
             id: Date.now(),
             text: this.state.text
         }
+
+        let newItems = this.state.items.concat(newItem);
+
         this.setState(
             state => ({
-                items: state.items.concat(newItem),
+                items: newItems,
                 text: ''
             })
         )
+
+        localStorage.setItems = ('items', newItems)
+
+
     }
 
     render() {
