@@ -12,8 +12,11 @@ class App extends Component {
         <header className="App-header">
           <Logo />
           <Header />
-          <MemoList />
+
         </header>
+        <main className="Main-content">
+          <MemoList />
+        </main>
       </div>
     );
   }
