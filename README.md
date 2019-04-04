@@ -1,3 +1,23 @@
+## React ToDo-List
+*React Project realized during DCI course*
+
+
+![My image](https://raw.githubusercontent.com/FeliOdras/react-todo-list/master/ReactMemoList.png)
+---
+#### **[Visit Poject Site &raquo;](https://feliodras.github.io/react-todo-list/)**
+---
+
+### Features:
+- Enter and store tasks in local Storage
+
+### Technologies:
+- HTML
+- CSS/SCSS
+- Javascript
+- React.js
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,4 +86,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-# react-todo-list
+
