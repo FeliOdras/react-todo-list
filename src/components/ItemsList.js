@@ -4,7 +4,9 @@ import '../styles/ItemsList.css';
 export default class ItemsList extends Component {
 
     handleClick = (event) => {
-        console.log('Clicked')
+        const currItemsArray = JSON.parse(localStorage.getItem('items'));
+        const currKey = event.target.id;
+    
     }  
     
 
@@ -15,7 +17,7 @@ export default class ItemsList extends Component {
                 <ul>
                     {this.props.items.map(item => {
                         return (
-                            <li key={item.id}>{item.text} <button className="delete" onClick={this.handleClick}>delete</button></li>
+                            <li key={item.id}>{item.text} <button className="delete" id={item.id} onClick={this.handleClick}>delete</button></li>
                         )
                     })}
                 </ul>
